@@ -15,32 +15,32 @@
       <label for="abflughafen">Abflughafen:
          <select name="abflughafen" id="abflughafen" size="7">
             <optgroup label="Deutschland">
-               <option value="FRA">Frankfurt am Main (FRA)</option>
-               <option value="MUC">München (MUC)</option>
-               <option value="BER">Berlin Brandenburg (BER)</option>
-               <option value="DUS">Düsseldorf (DUS)</option>
-               <option value="HAM">Hamburg (HAM)</option>
+               <option value="fRA">Frankfurt am Main (FRA)</option>
+               <option value="mUC">München (MUC)</option>
+               <option value="bER">Berlin Brandenburg (BER)</option>
+               <option value="dUS">Düsseldorf (DUS)</option>
+               <option value="hAM">Hamburg (HAM)</option>
             </optgroup>
             <optgroup label="Österreich">
-               <option value="VIE">Wien (VIE)</option>
-               <option value="GRZ">Graz (GRZ)</option>
-               <option value="INN">Innsbruck (INN)</option>
+               <option value="vIE">Wien (VIE)</option>
+               <option value="gRZ">Graz (GRZ)</option>
+               <option value="iNN">Innsbruck (INN)</option>
                <option value="SZG">Salzburg (SZG)</option>
-               <option value="LNZ">Linz (LNZ)</option>
+               <option value="lNZ">Linz (LNZ)</option>
             </optgroup>
             <optgroup label="Italien">
-               <option value="FCO">Rom-Fiumicino (FCO)</option>
-               <option value="MXP">Mailand-Malpensa (MXP)</option>
-               <option value="VCE">Venedig (VCE)</option>
-               <option value="NAP">Neapel (NAP)</option>
-               <option value="FLR">Florenz (FLR)</option>
+               <option value="fCO">Rom-Fiumicino (FCO)</option>
+               <option value="mXP">Mailand-Malpensa (MXP)</option>
+               <option value="vCE">Venedig (VCE)</option>
+               <option value="nAP">Neapel (NAP)</option>
+               <option value="fLR">Florenz (FLR)</option>
             </optgroup>
             <optgroup label="Frankreich">
-               <option value="CDG">Paris-Charles de Gaulle (CDG)</option>
-               <option value="ORY">Paris-Orly (ORY)</option>
-               <option value="NCE">Nizza (NCE)</option>
-               <option value="LYS">Lyon (LYS)</option>
-               <option value="MRS">Marseille (MRS)</option>
+               <option value="cDG">Paris-Charles de Gaulle (CDG)</option>
+               <option value="oRY">Paris-Orly (ORY)</option>
+               <option value="nCE">Nizza (NCE)</option>
+               <option value="lYS">Lyon (LYS)</option>
+               <option value="mRS">Marseille (MRS)</option>
             </optgroup>
          </select>
       </label>
@@ -49,13 +49,13 @@
 
    <fieldset>
       <legend> Art der Unterkunft</legend>
-      <input type="radio" id="hotel" name="Unterkunft" value="Hotel">
+      <input type="radio" id="hotel" name="unterkunft" value="hotel">
       <label for="hotel">Hotel</label><br>
-      <input type="radio" id="ferienwohnung" name="Unterkunft" value="Ferienwohnung">
+      <input type="radio" id="ferienwohnung" name="unterkunft" value="ferienwohnung">
       <label for="ferienwohnung">Ferienwohnung</label><br>
-      <input type="radio" id="hostel" name="Unterkunft" value="Hostel">
+      <input type="radio" id="hostel" name="unterkunft" value="hostel">
       <label for="hostel">Hostel</label><br>
-      <input type="radio" id="andere" name="Unterkunft" value="Andere">
+      <input type="radio" id="andere" name="unterkunft" value="andere">
       <label for="andere">Andere</label>
    </fieldset>
    <br>
@@ -63,13 +63,13 @@
    <fieldset>
       <legend>dienstleistungen</legend>
       <label>
-         <input type="checkbox" name="dienstleistungen[]" value="Reiseversicherung">Reiseversicherung
+         <input type="checkbox" name="dienstleistungen[]" value="reiseversicherung">Reiseversicherung
       </label><br>
       <label>
-         <input type="checkbox" name="dienstleistungen[]" value="Flughafentransfer">Flughafentransfer
+         <input type="checkbox" name="dienstleistungen[]" value="flughafentransfer">Flughafentransfer
       </label><br>
       <label>
-         <input type="checkbox" name="dienstleistungen[]" value="Zusätzliches Gepäck">Zusätzliches Gepäck
+         <input type="checkbox" name="dienstleistungen[]" value="zusätzliches_gepäck">Zusätzliches Gepäck
       </label><br>
    </fieldset>
    <br>
@@ -77,10 +77,10 @@
    <fieldset>
       <legend>Anfangs- und Endzeitpunkt</legend>
       <label>Datum:
-      <input type="date" name="Anfangsdatum"> Anfangsdatum
-      <input type="date" name="Enddatum"> Enddatum</label>
+      <input type="date" name="anfangsdatum"> Anfangsdatum
+      <input type="date" name="enddatum"> Enddatum</label>
       <label>Dauer:
-      <input type="number" name="Dauer" min="1" max="21"> Dauer der Reise (Tage)
+      <input type="number" name="dauer" min="1" max="21"> Dauer der Reise (Tage)
       </label>
    </fieldset>
    <br>
@@ -88,7 +88,7 @@
    <fieldset>
       <legend>Anzahl Personen </legend>
       <label>
-      <input type="number" name="Personen"> Anzahl der Personen
+      <input type="number" name="personen"> Anzahl der Personen
       </label>
    </fieldset>
    <br>
@@ -96,37 +96,18 @@
    <fieldset>
       <legend>Auswahl Fluggesellschaft  </legend>
       <label>
-      <select name="Fluggesellschaft">
-         <option value="Lufthansa">Lufthansa</option>
-         <option value="Emirates">Emirates</option>
-         <option value="British Airways">British Airways</option>
-         <option value="Delta Air Lines">Delta Air Lines</option>
-         <option value="American Airlines">American Airlines</option>
-         <option value="United Airlines">United Airlines</option>
-         <option value="Qatar Airways">Qatar Airways</option>
-         <option value="Singapore Airlines">Singapore Airlines</option>
-         <option value="Cathay Pacific">Cathay Pacific</option>
-         <option value="KLM">KLM</option>
-         <option value="Air France">Air France</option>
-         <option value="Turkish Airlines">Turkish Airlines</option>
-         <option value="ANA (All Nippon Airways)">ANA (All Nippon Airways)</option>
-         <option value="Qantas">Qantas</option>
-         <option value="Swiss International Air Lines">Swiss International Air Lines</option>
-         <option value="Virgin Atlantic">Virgin Atlantic</option>
-         <option value="Etihad Airways">Etihad Airways</option>
-         <option value="Air Canada">Air Canada</option>
-         <option value="Finnair">Finnair</option>
-         <option value="Southwest Airlines">Southwest Airlines</option>
-         <option value="Alaska Airlines">Alaska Airlines</option>
-         <option value="JetBlue Airways">JetBlue Airways</option>
-         <option value="Ryanair">Ryanair</option>
-         <option value="EasyJet">EasyJet</option>
-         <option value="AirAsia">AirAsia</option>
-         <option value="IndiGo">IndiGo</option>
-         <option value="Wizz Air">Wizz Air</option>
-         <option value="Norwegian Air Shuttle">Norwegian Air Shuttle</option>
-         <option value="SAS (Scandinavian Airlines)">SAS (Scandinavian Airlines)</option>
-         <option value="LATAM Airlines">LATAM Airlines</option>
+      <select name="fluggesellschaft">
+         <option value="lufthansa">Lufthansa</option>
+         <option value="emirates">Emirates</option>
+         <option value="british_airways">British Airways</option>
+         <option value="delta_air_lines">Delta Air Lines</option>
+         <option value="american_airlines">American Airlines</option>
+         <option value="united_airlines">United Airlines</option>
+         <option value="qatar_airways">Qatar Airways</option>
+         <option value="singapore_airlines">Singapore Airlines</option>
+         <option value="cathay_pacific">Cathay Pacific</option>
+         <option value="kLM">KLM</option>
+         <option value="air_france">Air France</option>
       </select>
       </label>
    </fieldset>
@@ -135,9 +116,9 @@
    <fieldset>
       <legend>optionale Dienstleistungen</legend>
       <label>
-         <input type="checkbox" name="Priority-Check-In"> Priority-Check-In
-         <input type="checkbox" name="zusätzliches Handgepäck"> zusätzliches Handgepäck
-         <input type="checkbox" name="Mietwagen buchen"> Mietwagen buchen
+         <input type="checkbox" name="priority_check_in"> Priority-Check-In
+         <input type="checkbox" name="zusätzliches_handgepäck"> zusätzliches Handgepäck
+         <input type="checkbox" name="mietwagen_buchen"> Mietwagen buchen
       </label>
    </fieldset>
    <br>
@@ -145,46 +126,45 @@
    <fieldset>
       <legend>Reiseziele</legend>
       <label>
-      <input list="reiseziele" name="Reiseziele">
-      <datalist id="Reiseziele">
-         <option value="Paris">Paris</option>
-         <option value="New York">New York</option>
-         <option value="Tokyo">Tokyo</option>
-         <option value="London">London</option>
-         <option value="Rom">Rom</option>
-         <option value="Barcelona">Barcelona</option>
-         <option value="Sydney">Sydney</option>
-         <option value="Los Angeles">Los Angeles</option>
-         <option value="Berlin">Berlin</option>
-         <option value="Rio de Janeiro">Rio de Janeiro</option>
-         <option value="Amsterdam">Amsterdam</option>
-         <option value="Venedig">Venedig</option>
-         <option value="Istanbul">Istanbul</option>
-         <option value="Dubai">Dubai</option>
-         <option value="Hongkong">Hongkong</option>
-         <option value="Singapur">Singapur</option>
-         <option value="Prag">Prag</option>
-         <option value="Bangkok">Bangkok</option>
-         <option value="Kapstadt">Kapstadt</option>
-         <option value="Toronto">Toronto</option>
-         <option value="San Francisco">San Francisco</option>
-         <option value="München">München</option>
-         <option value="Florenz">Florenz</option>
-         <option value="Peking">Peking</option>
-         <option value="Wien">Wien</option>
-         <option value="Budapest">Budapest</option>
-         <option value="Dublin">Dublin</option>
-         <option value="Edinburgh">Edinburgh</option>
-         <option value="Seoul">Seoul</option>
-         <option value="Lissabon">Lissabon</option>
-         <option value="Madrid">Madrid</option>
-         <option value="Athen">Athen</option>
-         <option value="Kairo">Kairo</option>
-         <option value="Moskau">Moskau</option>
-         <option value="Stockholm">Stockholm</option>
-         <option value="Oslo">Oslo</option>
-         <option value="Reykjavik">Reykjavik</option>
-         <option value="Helsinki">Helsinki</option>
+      <input list="reiseziele" name="reiseziele">
+      <datalist id="reiseziele">
+         <option value="paris">Paris</option>
+         <option value="new_york">New York</option>
+         <option value="tokyo">Tokyo</option>
+         <option value="london">London</option>
+         <option value="rom">Rom</option>
+         <option value="barcelona">Barcelona</option>
+         <option value="sydney">Sydney</option>
+         <option value="los_angeles">Los Angeles</option>
+         <option value="berlin">Berlin</option>
+         <option value="amsterdam">Amsterdam</option>
+         <option value="venedig">Venedig</option>
+         <option value="istanbul">Istanbul</option>
+         <option value="dubai">Dubai</option>
+         <option value="hongkong">Hongkong</option>
+         <option value="singapur">Singapur</option>
+         <option value="prag">Prag</option>
+         <option value="bangkok">Bangkok</option>
+         <option value="kapstadt">Kapstadt</option>
+         <option value="toronto">Toronto</option>
+         <option value="san_francisco">San Francisco</option>
+         <option value="münchen">München</option>
+         <option value="florenz">Florenz</option>
+         <option value="peking">Peking</option>
+         <option value="wien">Wien</option>
+         <option value="budapest">Budapest</option>
+         <option value="dublin">Dublin</option>
+         <option value="edinburgh">Edinburgh</option>
+         <option value="seoul">Seoul</option>
+         <option value="lissabon">Lissabon</option>
+         <option value="madrid">Madrid</option>
+         <option value="athen">Athen</option>
+         <option value="kairo">Kairo</option>
+         <option value="moskau">Moskau</option>
+         <option value="stockholm">Stockholm</option>
+         <option value="oslo">Oslo</option>
+         <option value="reykjavik">Reykjavik</option>
+         <option value="helsinki">Helsinki</option>
 
 
       </datalist>
@@ -206,3 +186,5 @@
 
 </body>
 </html>
+
+
